@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel de Carros</title>
+    <link rel="stylesheet" href="css/carros.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>ViajarBR ✈️</h2>
+        <div class="links">
+            <a href="index.html">Voos</a>
+            <a href="hotel.html">Hotéis</a>
+            <a href="pacote.html">Pacotes</a>
+            <a href="carros.html">Carros</a>
+            <a href="contato.html">Contato</a>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Aluguel de Carros 🚗</h1>
+            <p>Econômico, SUV ou Luxo · Km livre · Seguro opcional</p>
+        </div>
+    </header>
+
+        <main class="container">
+        <section class="search-box">
+            <div class="input-group">
+                <label>LOCAL DE RETIRADA</label>
+                <input type="text" id="pickup-input" placeholder="Aeroporto, hotel ou cidade...">
+            </div>
+            <div class="input-group">
+                <label>LOCAL DE DEVOLUÇÃO</label>
+                <input type="text" id="dropoff-input" placeholder="Mesmo local...">
+            </div>
+            <div class="input-group">
+                <button id="search-btn" class="btn-primary">Buscar</button>
+            </div>
+        </section>
+
+        <!-- SEÇÃO ADICIONADA CONFORME A IMAGEM -->
+                <!-- SEÇÃO DE OFERTAS COM AS IMAGENS ENVIADAS -->
+         <section class="offers-section">
+            <h2 class="offers-title">Ofertas de aluguel de carros em vários destinos!</h2>
+            
+            <div class="offers-grid">
+                <!-- CARD 1: COM SOMBRA (conforme pág. 8 e 9 do PDF) -->
+                <div class="offer-card card-shadow">
+                    <img src="carro-branco.png" alt="Carros de Luxo" class="offer-image">
+                    <div class="offer-content">
+                        <span class="offer-category">CARRO</span>
+                        <h3 class="offer-car-name">Carros de Luxo</h3>
+                        <p class="offer-location">Em Aeroporto Internacional Orlando</p>
+                        <p class="offer-company">Com CAPITAL RENT A CAR</p>
+                        <div class="offer-price-box">
+                            <span class="price-label">Tarifa diária a partir de</span>
+                            <span class="price-old">R$ 73</span>
+                            <span class="price-current">R$ 51</span>
+                            <span class="discount-badge">-30%</span>
+                        </div>
+                        <div class="offer-points">
+                            <span class="points-icon">📇</span> Passaporte Decolar: Você acumularia 70 pontos
+                        </div>
+                        <div class="offer-payment">Em até 10x</div>
+                    </div>
+                </div>
+
+                <!-- CARD 2: COM OPACIDADE REDUZIDA (conforme pág. 4 e 5 do PDF) -->
+                <div class="offer-card card-opacity">
+                    <img src="carro-preto.png" alt="Carros Pequenos" class="offer-image">
+                    <div class="offer-content">
+                        <span class="offer-category">CARRO</span>
+                        <h3 class="offer-car-name">Carros Pequenos</h3>
+                        <p class="offer-location">Em São Paulo</p>
+                        <p class="offer-company">Com Foco</p>
+                        <div class="offer-price-box">
+                            <span class="price-label">Tarifa diária a partir de</span>
+                            <span class="price-current">R$ 89</span>
+                        </div>
+                        <div class="offer-points">
+                            <span class="points-icon">📇</span> Passaporte Decolar: Você acumularia 123 pontos
+                        </div>
+                        <div class="offer-payment">Em até 3x sem juros</div>
+                    </div>
+                </div>
+
+                <!-- CARD 3: TOTALMENTE NORMAL -->
+                <div class="offer-card">
+                    <img src="carro-branco-2.png" alt="Carros de Luxo" class="offer-image">
+                    <div class="offer-content">
+                        <span class="offer-category">CARRO</span>
+                        <h3 class="offer-car-name">Carros de Luxo</h3>
+                        <p class="offer-location">Em Aeroporto Internacional Miami</p>
+                        <p class="offer-company">Com Boutique Rent a Car</p>
+                        <div class="offer-price-box">
+                            <span class="price-label">Tarifa diária a partir de</span>
+                            <span class="price-old">R$ 92</span>
+                            <span class="price-current">R$ 46</span>
+                            <span class="discount-badge">-50%</span>
+                        </div>
+                        <div class="offer-points">
+                            <span class="points-icon">📇</span> Passaporte Decolar: Você acumularia pontos
+                        </div>
+                        <div class="offer-payment">Reserve com cartão</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="results-container" class="results-grid"></section>
+    </main>
+
+
+    <script src="src/Js/cars.js"></script>
+</body>
+</html>

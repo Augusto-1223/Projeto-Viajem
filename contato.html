@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>ViajarBR ✈️</h2>
+        <div class="links">
+            <a href="index.html">Voos</a>
+            <a href="hotel.html">Hotéis</a>
+            <a href="pacote.html">Pacotes</a>
+            <a href="carros.html">Carros</a>
+            <a href="contato.html">Contato</a>
+        </div>
+    </nav>
+
+    <div class="container-central">
+        <main class="contact-card">
+            <h2>Fale Conosco</h2>
+            <p class="subtitle">Preencha o formulário abaixo e nossa equipe responderá em breve.</p>
+
+            <form id="form-contato" action="enviar.php" method="post">
+                
+                <div class="input-group">
+                    <label for="nomesobrenome">Nome e sobrenome</label>
+                    <input type="text" id="nomesobrenome" class="input-padrao" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input-padrao" name="email" placeholder="seu-email@dominio.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="input-padrao" name="telefone" placeholder="(00) 00000-0000" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" class="input-padrao" name="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                </div>
+
+                <div class="radio-group">
+                    <p class="group-title">Como prefere o nosso contato?</p>
+                    <div class="radio-options">
+                        <label for="radio-email" class="radio-label">
+                            <input type="radio" name="contato" value="email" id="radio-email" checked> Email
+                        </label>
+                        <label for="radio-telef" class="radio-label">
+                            <input type="radio" name="contato" value="telefone" id="radio-telef"> Telefone
+                        </label>
+                        <label for="radio-whatsapp" class="radio-label">
+                            <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"> Whatsapp
+                        </label>
+                    </div>
+                </div>
+
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="novidades" checked> 
+                        <span>Gostaria de receber nossas novidades por email?</span>
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <input type="submit" value="Enviar formulário" class="btn-primary">
+                </div>
+                
+            </form>
+            
+        </main>
+        
+    </div>
+    
+        <section class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60093.73316548268!2d-48.033991451367164!3d-19.718655099999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bad18160f7b4d3%3A0x5d0c29cbc9d3e469!2sIFTM%20-%20Uberaba%20(Parque%20Tecnol%C3%B3gico)!5e0!3m2!1spt-BR!2sbr!4v1666272144983!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+</html>

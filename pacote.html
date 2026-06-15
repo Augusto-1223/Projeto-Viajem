@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacotes de Viagem</title>
+    <link rel="stylesheet" href="css/pacote.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>ViajarBR ✈️</h2>
+        <div class="links">
+            <a href="index.html">Voos</a>
+            <a href="hotel.html">Hotéis</a>
+            <a href="pacote.html">Pacotes</a>
+            <a href="carros.html">Carros</a>
+            <a href="contato.html">Contato</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Pacotes Completos 🌴</h1>
+            <p>Voo + Hotel combinados · Tudo incluído</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="search-box">
+            <div class="input-group">
+                <label>🏁 DESTINO</label>
+                <input type="text" id="dest-input" placeholder="Para onde você quer ir?">
+            </div>
+            <div class="input-group">
+                <button id="search-btn" class="btn-primary">Buscar Pacotes</button>
+            </div>
+        </section>
+
+        <section id="results-container" class="results-list"></section>
+    </main>
+    <script src="src/Js/packages.js"></script>
+</body>
+</html>
