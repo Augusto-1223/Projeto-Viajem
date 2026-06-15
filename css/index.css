@@ -1,0 +1,42 @@
+.results-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.flight-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.flight-airline {
+    font-weight: bold;
+    font-size: 18px;
+    width: 120px;
+}
+
+.flight-route {
+    text-align: center;
+    flex: 1;
+}
+
+.flight-route h3 {
+    font-size: 20px;
+}
+
+.flight-price-box {
+    text-align: right;
+}
+
+.flight-price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0059B3;
+}
+

@@ -1,0 +1,30 @@
+.results-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.hotel-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.hotel-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hotel-info {
+    padding: 16px;
+}
+
+.hotel-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4F46E5;
+    margin-top: 8px;
+}
